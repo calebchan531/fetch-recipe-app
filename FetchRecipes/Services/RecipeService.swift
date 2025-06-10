@@ -13,6 +13,9 @@ protocol RecipeServiceProtocol {
 
 class RecipeService: RecipeServiceProtocol {
     private let apiClient: APIClientProtocol
+    // All Recipes(Working): https://d3jbb8n5wk0qxi.cloudfront.net/recipes.json
+    // Malformed Data: https://d3jbb8n5wk0qxi.cloudfront.net/recipes-malformed.json
+    // Empty Data: https://d3jbb8n5wk0qxi.cloudfront.net/recipes-empty.json
     private let baseURL = "https://d3jbb8n5wk0qxi.cloudfront.net/recipes.json"
     
     init(apiClient: APIClientProtocol = APIClient()) {
